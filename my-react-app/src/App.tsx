@@ -1,15 +1,13 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
-import Menu from './menu/Menu'
+import Menu from './components/menu/Menu'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <div>abc</div>
       <Menu></Menu>
     </>
   )

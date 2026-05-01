@@ -16,3 +16,9 @@ li {
 .link:hover {
     text-decoration: underline;
 }
+
+#coming-soon {
+    padding: 10px 10px;
+    color: var(--color-muted);
+    text-decoration: none;
+}

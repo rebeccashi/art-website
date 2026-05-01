@@ -11,6 +11,7 @@ export default function Menu() {
              <Link to={EXTERNAL_URLS.store} className='link' target="_blank" rel="noopener">
                Shop
              </Link>
+             <Link to='/' id='coming-soon'>More Coming Soon</Link>
              {/* <Link to='/about' className='link'>About</Link>
              <Link to='/contact' className='link'>Contact</Link> */}
           </ul>

@@ -9,12 +9,12 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  base: '/', //netlify
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
 
     },
-  }
-  // base: '/art-website/', // repo name for GitHub Pages
+  },
+  // base: '/', //netlify
+  base: '/art-website/', // repo name for GitHub Pages
 })

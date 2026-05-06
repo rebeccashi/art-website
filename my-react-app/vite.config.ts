@@ -16,5 +16,5 @@ export default defineConfig({
     },
   },
   // base: '/', //netlify
-  base: '/art-website/', // repo name for GitHub Pages
+  base: '/', // repo name for GitHub Pages
 })

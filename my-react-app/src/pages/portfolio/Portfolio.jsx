@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SeriesList from "@/components/SeriesList/SeriesList";
 import SeriesPage from "@/components/SeriesPage/SeriesPage";
-import sampleSeries from "@/data/sampleSeries";
+import seriesList from "@/data/seriesList";
 import "./Portfolio.css";
 
 /**
@@ -19,7 +19,7 @@ import "./Portfolio.css";
  *   <Portfolio />
  *   <Portfolio series={mySeriesData} />
  */
-export default function Portfolio({ series = sampleSeries }) {
+export default function Portfolio({ series = seriesList }) {
   const [activeSeries, setActiveSeries] = useState(null);
 
   return (

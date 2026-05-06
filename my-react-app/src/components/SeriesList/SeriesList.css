@@ -1,0 +1,89 @@
+/* ── List of series cards ──────────────────────────────────────────── */
+.series-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ── Individual series card ────────────────────────────────────────── */
+.series-card {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+/* Alternate image/text sides for visual rhythm */
+.series-card:nth-child(even) {
+  grid-template-columns: 1fr 340px;
+}
+.series-card:nth-child(even) .series-card__image-wrap {
+  order: 2;
+}
+.series-card:nth-child(even) .series-card__body {
+  order: 1;
+}
+
+/* ── Cover image ───────────────────────────────────────────────────── */
+.series-card__image-wrap {
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.series-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.series-card:hover .series-card__image {
+  transform: scale(1.04);
+}
+
+/* ── Text body ─────────────────────────────────────────────────────── */
+.series-card__body {
+  padding: 1rem 0;
+}
+
+.series-card__title {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.4rem;
+}
+
+.series-card__meta {
+  display: block;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.series-card__description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  max-width: 420px;
+  margin: 0;
+}
+
+/* ── Responsive ────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .series-card,
+  .series-card:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+  .series-card:nth-child(even) .series-card__image-wrap,
+  .series-card:nth-child(even) .series-card__body {
+    order: unset;
+  }
+}

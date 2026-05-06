@@ -1,6 +1,6 @@
 import './Menu.css'
 import { Link } from 'react-router-dom'
-import { EXTERNAL_URLS } from '../../constants/urls'
+import { EXTERNAL_URLS } from '../../data/urls'
 
 export default function Menu() {
     return (
@@ -10,6 +10,9 @@ export default function Menu() {
              {/* <Link to='/gallery' className='link'>Gallery</Link> */}
              <Link to={EXTERNAL_URLS.store} className='link' target="_blank" rel="noopener">
                Shop
+             </Link>
+             <Link to='/portfolio' className='link'>
+               Portfolio
              </Link>
              <Link to='/' id='coming-soon'>More Coming Soon</Link>
              {/* <Link to='/about' className='link'>About</Link>

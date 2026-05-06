@@ -1,0 +1,59 @@
+/* ── Grid layout ───────────────────────────────────────────────────── */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .work-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .work-grid { gap: 0.75rem; }
+}
+
+/* ── Individual work cell ──────────────────────────────────────────── */
+.work-grid__item {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.work-grid__image-wrap {
+  overflow: hidden;
+}
+
+.work-grid__image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.work-grid__item:hover .work-grid__image {
+  transform: scale(1.03);
+}
+
+/* ── Caption below image ───────────────────────────────────────────── */
+.work-grid__caption {
+  padding: 0.6rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.work-grid__title {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+
+.work-grid__medium {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #aaa;
+}

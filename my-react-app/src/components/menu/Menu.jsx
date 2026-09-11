@@ -7,16 +7,14 @@ export default function Menu() {
       <div id="menu">
           <ul>
              <Link to='/' className='link'>Home</Link>
-             {/* <Link to='/gallery' className='link'>Gallery</Link> */}
              <Link to={EXTERNAL_URLS.store} className='link' target="_blank" rel="noopener">
                Shop
              </Link>
              <Link to='/portfolio' className='link'>
                Portfolio
              </Link>
-             <Link to='/' id='coming-soon'>More Coming Soon</Link>
-             {/* <Link to='/about' className='link'>About</Link>
-             <Link to='/contact' className='link'>Contact</Link> */}
+             <Link to='/about' className='link'>About</Link>
+             {/* <Link to='/contact' className='link'>Contact</Link> */}
           </ul>
       </div>
     )

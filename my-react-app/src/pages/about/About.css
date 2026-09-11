@@ -1,0 +1,16 @@
+#about {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1025px) {
+    #about-body {
+        max-width: 50%;
+    }
+}
+
+#about-body {
+    max-width: 80%;
+    margin: 20px auto;
+    text-align: left;
+}

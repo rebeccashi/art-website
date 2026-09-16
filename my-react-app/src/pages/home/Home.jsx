@@ -1,5 +1,5 @@
 import Menu from '../../components/menu/Menu'
-import cocoonSeries from '../../assets/cocoon_series.png'
+import cocoonSeries from '../../assets/cocoon_series_web.jpg'
 import './Home.css'
 
 export default function Home() {

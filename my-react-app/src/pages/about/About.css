@@ -3,14 +3,32 @@
     flex-direction: column;
 }
 
-@media screen and (min-width: 1025px) {
-    #about-body {
-        max-width: 50%;
+
+/* laptop styling: portrait and the description are in two columns. */
+@media (min-width: 768px) {
+    #about {
+        flex-direction: row;
     }
 }
 
+h1 {
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    min-width: 350px;
+}
+
+.column {
+   margin: 20px 40px;
+}
+
 #about-body {
-    max-width: 80%;
-    margin: 20px auto;
     text-align: left;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.2rem;
 }

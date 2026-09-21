@@ -99,9 +99,10 @@
 .carousel-meta__detail {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 0.72rem;
+  /* font-weight: 600; */
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #888;
+  color: #999;
 }
 
 .carousel-meta__counter {

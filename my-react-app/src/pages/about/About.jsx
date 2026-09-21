@@ -1,6 +1,6 @@
 import Menu from '../../components/menu/Menu'
 import './About.css'
-import portrait from '../../assets/portrait.png'
+import portrait from '../../assets/portrait.jpg'
 
 export default function About() {
     return (

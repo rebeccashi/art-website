@@ -8,7 +8,7 @@ export default function Home() {
         <Menu></Menu> 
         <div id='home-intro'>
           <h1>Rebecca Xiaoyi</h1>
-          <div>Watercolor and Mixed Media Artist based in New York City</div>
+          <h2>Watercolor and Mixed Media Artist based in New York City</h2>
         </div>
           <div>
             <img src={cocoonSeries} alt="Hero"  id='hero-img'/>

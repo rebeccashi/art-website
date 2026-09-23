@@ -20,7 +20,7 @@
 
   /* Sizes */
   --fs-h1: 2.5rem;
-  --fs-h2: 1.75rem;
+  --fs-h2: 1.3rem;
   --fs-text: 1rem;
   --fs-sub: 0.75rem;
 
@@ -37,7 +37,7 @@
 
   /* Letter spacing */
   --ls-heading: -0.01em;
-  --ls-text: 0.03em;
+  --ls-text: 0em;
   --ls-sub: 0.1em;
 }
 
@@ -75,23 +75,21 @@ select {
 
 /* ── h1 / h2 ──────────────────────────────────────────────────────── */
 
-h1,
-h2 {
+h1 {
   font-family: var(--font-heading);
   font-weight: var(--fw-heading);
   letter-spacing: var(--ls-heading);
   color: var(--color-text);
-}
-
-h1 {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
   margin: 0 0 0.5em;
 }
 
 h2 {
+  font-family: var(--font-body);
   font-size: var(--fs-h2);
   line-height: var(--lh-h2);
+  font-weight: var(--fw-body);
   margin: 0 0 0.5em;
 }
 

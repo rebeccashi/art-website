@@ -52,26 +52,15 @@
 }
 
 .series-card__title {
-  font-size: 2rem;
-  font-weight: normal;
-  letter-spacing: -0.02em;
   margin: 0 0 0.4rem;
 }
 
 .series-card__meta {
   display: block;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #888;
   margin-bottom: 1rem;
 }
 
 .series-card__description {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #444;
   max-width: 420px;
   margin: 0;
 }

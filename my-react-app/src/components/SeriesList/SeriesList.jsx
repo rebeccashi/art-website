@@ -30,7 +30,7 @@ export default function SeriesList({ series, onSelectSeries }) {
 
           <div className="series-card__body">
             <h2 className="series-card__title">{s.title}</h2>
-            <span className="series-card__meta">
+            <span className="subtext series-card__meta">
               {s.year} · {s.works.length} works
             </span>
             {s.description && (

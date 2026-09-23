@@ -19,13 +19,13 @@ export default function SeriesPage({ series, onBack }) {
   return (
     <div className="series-page">
 
-      <button className="series-page__back-btn" onClick={onBack}>
+      <button className="subtext series-page__back-btn" onClick={onBack}>
         ← All Series
       </button>
 
       <header className="series-page__header">
         <h1 className="series-page__title">{series.title}</h1>
-        <span className="series-page__year">{series.year}</span>
+        <span className="subtext series-page__year">{series.year}</span>
         {series.description && (
           <p className="series-page__description">{series.description}</p>
         )}

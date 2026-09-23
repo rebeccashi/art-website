@@ -19,6 +19,7 @@
   max-width: 900px;
   padding: 1.5rem;
   box-sizing: border-box;
+  --color-muted: #a8a8a8; /* subtext colour on the dark overlay */
 }
 
 /* ── Close button ──────────────────────────────────────────────────── */
@@ -91,24 +92,6 @@
   color: #fff;
 }
 
-.carousel-meta__title {
-  font-family: 'Georgia', serif;
-  font-size: 1.1rem;
-}
-
-.carousel-meta__detail {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.72rem;
-  /* font-weight: 600; */
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #999;
-}
-
 .carousel-meta__counter {
   margin-left: auto;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  color: #666;
 }

@@ -46,14 +46,5 @@
 }
 
 .work-grid__title {
-  font-size: 0.9rem;
-  color: #1a1a1a;
-}
-
-.work-grid__medium {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #aaa;
+  color: var(--color-text);
 }

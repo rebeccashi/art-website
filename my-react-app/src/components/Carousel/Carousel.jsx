@@ -53,9 +53,9 @@ export default function Carousel({ works, startIndex, onClose }) {
 
         <footer className="carousel-meta">
           <span className="carousel-meta__title">{work.title}</span>
-          {work.medium && <span className="carousel-meta__detail">{work.medium}</span>}
-          {work.size   && <span className="carousel-meta__detail">{work.size}</span>}
-          <span className="carousel-meta__counter">{index + 1} / {works.length}</span>
+          {work.medium && <span className="subtext carousel-meta__detail">{work.medium}</span>}
+          {work.size   && <span className="subtext carousel-meta__detail">{work.size}</span>}
+          <span className="subtext carousel-meta__counter">{index + 1} / {works.length}</span>
         </footer>
 
       </div>

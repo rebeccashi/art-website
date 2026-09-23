@@ -33,7 +33,7 @@ export default function WorkGrid({ works, onSelectWork }) {
           <div className="work-grid__caption">
             <span className="work-grid__title">{work.title}</span>
             {work.medium && (
-              <span className="work-grid__medium">{work.medium}</span>
+              <span className="subtext work-grid__medium">{work.medium}</span>
             )}
           </div>
         </button>

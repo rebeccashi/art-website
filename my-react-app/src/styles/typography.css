@@ -1,0 +1,130 @@
+/* ─────────────────────────────────────────────────────────────────────
+   Typography — the single source of truth for fonts on the site.
+   Change a value in :root and every page updates.
+
+   Four styles:
+     h1       page titles
+     h2       section / series titles
+     text     body copy (p, li, a, and anything unstyled)
+     subtext  small captions and metadata → add className="subtext"
+
+   Fonts (load them in index.html, see README notes):
+     Playfair Display (headings) + DM Sans (body)
+   ───────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Families */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-menu: 'Roboto', sans-serif;
+
+  /* Sizes */
+  --fs-h1: 2.5rem;
+  --fs-h2: 1.75rem;
+  --fs-text: 1rem;
+  --fs-sub: 0.75rem;
+
+  /* Weights */
+  --fw-heading: 400;
+  --fw-text: 400;
+  --fw-sub: 400;
+
+  /* Line heights */
+  --lh-h1: 1.2;
+  --lh-h2: 1.25;
+  --lh-text: 1.7;
+  --lh-sub: 1.4;
+
+  /* Letter spacing */
+  --ls-heading: -0.01em;
+  --ls-text: 0.03em;
+  --ls-sub: 0.1em;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --fs-h1: 2rem;
+    --fs-h2: 1.5rem;
+  }
+}
+
+/* ── Base ─────────────────────────────────────────────────────────── */
+
+html {
+  font-size: 100%; /* 1rem = 16px; keeps every rem value predictable */
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-text);
+  font-weight: var(--fw-text);
+  line-height: var(--lh-text);
+  letter-spacing: var(--ls-text);
+  color: var(--color-text);
+}
+
+/* Buttons and inputs don't inherit fonts by default; make them. */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+/* ── h1 / h2 ──────────────────────────────────────────────────────── */
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-heading);
+  letter-spacing: var(--ls-heading);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  margin: 0 0 0.5em;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  margin: 0 0 0.5em;
+}
+
+/* ── text ─────────────────────────────────────────────────────────── */
+
+p,
+li {
+  font-family: var(--font-body);
+  font-size: var(--fs-text);
+  font-weight: var(--fw-text);
+  line-height: var(--lh-text);
+  letter-spacing: var(--ls-text);
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  font: inherit;
+  letter-spacing: inherit;
+  font-family: var(--font-menu);
+}
+
+/* ── subtext ──────────────────────────────────────────────────────── */
+/* Captions, dates, mediums, counters. Use on a span, p, or button.   */
+
+.subtext {
+  font-family: var(--font-body);
+  font-size: var(--fs-sub);
+  font-weight: var(--fw-sub);
+  line-height: var(--lh-sub);
+  letter-spacing: var(--ls-sub);
+  text-transform: uppercase;
+  color: var(--color-muted);
+}

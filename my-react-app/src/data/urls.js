@@ -1,4 +1,4 @@
-import portrait from '@/assets/assets_small/portrait.jpg';
+import portrait from '@/assets/small/portrait.jpg';
 
 export const EXTERNAL_URLS = {
 //   instagram: 'https://www.instagram.com/your-profile',

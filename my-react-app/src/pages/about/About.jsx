@@ -1,6 +1,6 @@
 import Menu from '../../components/menu/Menu'
 import './About.css'
-import portrait from '../../assets/portrait.jpg'
+import {imageUrls} from '../../data/urls.js'
 
 export default function About() {
     return (
@@ -8,7 +8,7 @@ export default function About() {
         <Menu></Menu> 
         <div id='about'>
           <div id='about-image' className="column">
-            <img src={portrait} alt="A photo of the artist in a black cocktail dress standing in front of a watercolor portrait." />
+            <img src={imageUrls.url} alt="A photo of the artist in a black cocktail dress standing in front of a watercolor portrait." />
           </div>
           <div className="column">
             <h1 id="about-title">About The Artist</h1>

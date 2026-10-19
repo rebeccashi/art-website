@@ -9,17 +9,18 @@
  *   Work    → { id, title, medium, size, image }
  */
 
-import cocoonSeries from "@/assets/cocoon_series.PNG";
+import cocoonSeries from "@/assets/assets_small/cocoon_series_web.jpg";
 import cocoon_1 from "@/assets/cocoon_1.JPG";
 import cocoon_2 from "@/assets/cocoon_2.JPG";
 import cocoon_3 from "@/assets/cocoon_3.jpg";
 import phoenix from '@/assets/phoenix.jpg';
-import metamorphosis from '@/assets/metamorphosis.jpg';
-import first_blooom from '@/assets/first_bloom.jpg';
+import metamorphosis from '@/assets/assets_small/metamorphosis_web.jpg';
+import metamorphosis_lg from '@/assets/metamorphosis.JPG';
+import first_blooom_lg from '@/assets/first_bloom.JPG';
+import first_blooom from '@/assets/assets_small/first_bloom_web.jpg';
 import flower_girl from '@/assets/flower_girl.jpg';
 import the_gaze from '@/assets/the_gaze.PNG';
 import indigo_wash from '@/assets/indigo_wash.jpg';
-
 
 const seriesList = [
   {
@@ -74,6 +75,7 @@ const seriesList = [
         medium: "Watercolor on Paper",
         size: '10"x14"',
         image: first_blooom,
+        image_lg: first_blooom_lg
       },
       {
         id: "ls-3",
@@ -81,6 +83,7 @@ const seriesList = [
         medium: "Watercolor on Paper",
         size: '9"x12"',
         image: metamorphosis,
+        image_lg: metamorphosis_lg
       },
     ],
   },

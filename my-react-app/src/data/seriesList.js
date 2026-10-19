@@ -21,9 +21,52 @@ import first_blooom from '@/assets/small/first_bloom_web.jpg';
 import flower_girl from '@/assets/flower_girl.jpg';
 import the_gaze from '@/assets/the_gaze.PNG';
 import indigo_wash from '@/assets/indigo_wash.jpg';
+import ablaze from '@/assets/small/ablaze.jpeg';
 
 const seriesList = [
   {
+    id: "Metamorphosis-Series",
+    title: "Metamorphosis",
+    year: "2024-2026",
+    description:
+      "These ask what transformation looks like when it finally breaks the surface — mythic, violent, luminous. The body here is not hiding but erupting, caught in the moment where inner upheaval becomes visible form.",
+    cover: metamorphosis,
+    works: [
+      {
+        id: "ls-2",
+        title: "Flames I - Aglow",
+        medium: "Watercolor on Paper",
+        size: '10"x14"',
+        image: first_blooom,
+        image_lg: first_blooom_lg
+      },
+      {
+        id: "ls-3",
+        title: "Metamorphosis",
+        medium: "Watercolor on Paper",
+        size: '9"x12"',
+        image: metamorphosis,
+        image_lg: metamorphosis_lg
+      },
+      {
+        id: 'ls-1',
+        title: "Flames II - Ablaze",
+        medium: "Watercolor on Paper",
+        size: '8"x11',
+        image: ablaze
+        
+      },
+
+      {
+        id: "ls-4",
+        title: "Phoenix",
+        medium: "Watercolor on Paper",
+        size: '11"x15"',
+        image: phoenix,
+      },
+    ],
+  },
+    {
     id: "cocoon-series",
     title: "Cocoon",
     year: "2024",
@@ -51,39 +94,6 @@ const seriesList = [
         medium: "Watercolor on Paper",
         size: '9"x12"',
         image: cocoon_3,
-      },
-    ],
-  },
-  {
-    id: "Metamorphosis-Series",
-    title: "Metamorphosis",
-    year: "2024-2026",
-    description:
-      "These ask what transformation looks like when it finally breaks the surface — mythic, violent, luminous. The body here is not hiding but erupting, caught in the moment where inner upheaval becomes visible form.",
-    cover: phoenix,
-    works: [
-      {
-        id: "m1",
-        title: "Phoenix",
-        medium: "Watercolor on Paper",
-        size: '11"x15"',
-        image: phoenix,
-      },
-      {
-        id: "ls-2",
-        title: "Flames I - Aglow",
-        medium: "Watercolor on Paper",
-        size: '10"x14"',
-        image: first_blooom,
-        image_lg: first_blooom_lg
-      },
-      {
-        id: "ls-3",
-        title: "Metamorphosis",
-        medium: "Watercolor on Paper",
-        size: '9"x12"',
-        image: metamorphosis,
-        image_lg: metamorphosis_lg
       },
     ],
   },

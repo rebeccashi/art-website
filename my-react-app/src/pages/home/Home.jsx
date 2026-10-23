@@ -1,5 +1,5 @@
 import Menu from '../../components/menu/Menu'
-import cocoonSeriesList from '../../data/seriesList'
+import {homePageArt} from '@/data/artwork.js'
 import './Home.css'
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
           <h2>Watercolor and Mixed Media Artist based in New York City</h2>
         </div>
           <div>
-            <img src={cocoonSeriesList[0].cover} alt="Hero"  id='hero-img'/>
+            <img src={homePageArt.cover} alt="Hero"  id='hero-img'/>
           </div>
       </div>
     )

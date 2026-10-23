@@ -23,8 +23,8 @@ import the_gaze from '@/assets/the_gaze.PNG';
 import indigo_wash from '@/assets/indigo_wash.jpg';
 import ablaze from '@/assets/small/ablaze.jpeg';
 
-const seriesList = [
-  {
+export const allSeries = new Map([
+  ['s1', {
     id: "Metamorphosis-Series",
     title: "Metamorphosis",
     year: "2024-2026",
@@ -65,8 +65,8 @@ const seriesList = [
         image: phoenix,
       },
     ],
-  },
-    {
+  }],
+  ['s2', {
     id: "cocoon-series",
     title: "Cocoon",
     year: "2024",
@@ -96,8 +96,9 @@ const seriesList = [
         image: cocoon_3,
       },
     ],
-  },
-  {id: 'Portrait-Studies',
+  }],
+  ['s3-studies', {
+    id: 'Portrait-Studies',
     title: "Portrait Studies",
     year: "2024",
     description: 'A series of portraits combining realism and expressionism.',
@@ -125,8 +126,10 @@ const seriesList = [
         image: indigo_wash,
       }
     ]
+  }]
+]
+);
 
-  }
-];
+export const homePageArt = allSeries.get('s2');
 
-export default seriesList;
+export default { allSeries, homePageArt };

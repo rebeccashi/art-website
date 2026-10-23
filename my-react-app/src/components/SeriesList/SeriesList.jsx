@@ -7,38 +7,42 @@ import "./SeriesList.css";
  * Clicking a card calls onSelectSeries with that series object.
  *
  * Props:
- *   series         {Array}    - Array of series objects
+ *   series         {Map}    - k: series name, v: series object
  *   onSelectSeries {function} - Called with the clicked series object
  */
 export default function SeriesList({ series, onSelectSeries }) {
   return (
     <div className="series-list">
-      {series.map((s) => (
+      {Array.from(series).map(([name, series]) => {
+        console.log(name, series);
+        return (
         <button
-          key={s.id}
+          key={series.id}
           className="series-card"
-          onClick={() => onSelectSeries(s)}
+          onClick={() => onSelectSeries(name)}
         >
           <div className="series-card__image-wrap">
             <img
-              src={s.cover}
-              alt={s.title}
+              src={series.cover}
+              alt={series.title}
               className="series-card__image"
               loading="lazy"
             />
           </div>
 
           <div className="series-card__body">
-            <h2 className="series-card__title">{s.title}</h2>
+            <h2 className="series-card__title">{series.title}</h2>
             <span className="subtext series-card__meta">
-              {s.year} · {s.works.length} works
+              {series.year} · {series.works?.length} works
             </span>
-            {s.description && (
-              <p className="series-card__description">{s.description}</p>
+            {series.description && (
+              <p className="series-card__description">{series.description}</p>
             )}
           </div>
         </button>
-      ))}
+      )
+      }
+      )}
     </div>
   );
 }
